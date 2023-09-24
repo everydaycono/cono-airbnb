@@ -23,7 +23,6 @@ app.use('/api/posts', PostRouter);
 app.use('/api/auth', AuthRouter);
 
 const main = async () => {
-  console.log(process.env, 'TEST purpose');
   try {
     await prisma.$connect();
     app.listen(PORT, () => {

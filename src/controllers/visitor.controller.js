@@ -5,7 +5,7 @@ const getVisitorHistory = asyncHandler(async (req, res) => {
   const visitors = await prisma.visitor.findMany();
 
   res.status(200).json({
-    mewssage: 'visitor history',
+    message: 'visitor history',
     data: visitors,
   });
 });
